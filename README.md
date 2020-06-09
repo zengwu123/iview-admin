@@ -88,3 +88,5 @@ npm run build
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2016-present, TalkingData
+
+https://blog.csdn.net/I_am_Hutengfei/article/details/100561564/
