@@ -90,3 +90,19 @@ npm run build
 Copyright (c) 2016-present, TalkingData
 
 https://blog.csdn.net/I_am_Hutengfei/article/details/100561564/
+
+CREATE TABLE `sys_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(64) NOT NULL COMMENT '用户名',
+  `password` varchar(64) DEFAULT NULL COMMENT '用户密码',
+  `last_login_time` datetime DEFAULT NULL COMMENT '上一次登录时间',
+  `status` tinyint(1) DEFAULT '1' COMMENT '账号是否可用。默认为1（可用）',
+  `image_url` varchar(100) DEFAULT '/assets/images/dudu.jpg' COMMENT '头像地址',
+  `not_expired` tinyint(1) DEFAULT '1' COMMENT '是否过期。默认为1（没有过期）',
+  `account_not_locked` tinyint(1) DEFAULT '1' COMMENT '账号是否锁定。默认为1（没有锁定）',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  `update_time` datetime DEFAULT NULL COMMENT '修改时间',
+  `create_user` varchar(64) DEFAULT NULL COMMENT '创建人',
+  `update_user` varchar(64) DEFAULT NULL COMMENT '修改人',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
